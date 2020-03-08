@@ -335,7 +335,7 @@ if(RUN_KNN):
 
     print("KNN: Start Gridsearch")
     from sklearn.model_selection import GridSearchCV
-    parameters = {'n_neighbors':[1,3,5],}
+    parameters = {'n_neighbors':[1,3,5,7,9,11,13,15,17,19,21],}
     grid_search = GridSearchCV(estimator = knn, 
                                param_grid = parameters,
                                scoring = 'accuracy',
